@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget</title>
+</head>
+<body>
+    <div class="container">
+       <h1>Budget App</h1>
+       <div class="feed-back"></div>
+
+       <form action="" class="budget-form" id="budgetForm">
+           <label for="budgetInput">Please Enter Your Budget</label>
+           <input type="number" id="budgetInput" class="budget-input">
+           <button class="btn btn-budget" id="btnBudget">Calculate</button>
+       </form>
+       <div class="all-beb" id="allBeb">
+           <div class="budget-total" id="totalBudget">
+               <h2 style="text-transform: uppercase;">Budget</h2>
+               <span class="budget-icon" id="budgetIcon" ><i class="fas fa-money-bill-alt" style="font-size: 8em;" ></i></span>
+               <h4 class="budget-sign" id="budgetSign"><span>$</span><span id="budgetAmount">0</span></h4>
+               
+           </div>
+           <div class="expenses-total" id="expenseTotal">
+               <h2 style="text-transform: uppercase;">Expenses</h2>
+               <span class="expense-icon" id="expenseIcon"><i class="fas fa-credit-card" style="font-size: 8em;"></i></span>
+               <h4 class="expense-sign" id="expenseSign"><span>$</span><span id="expenseAmount">0</span></h4>
+           </div>
+           <div class="balance-total" id="balanceTotal">
+               <h2 style="text-transform: uppercase;">Balance</h2>
+               <span class="balance-icon" id="balanceIcon"><i class="fas fa-dollar-sign" style="font-size: 8em;"></i></span>
+               <h4 class="balance-sign" id="balanceSign"><span>$</span><span class="balance-amount" id="balanceAmount">0</span></h4>
+           </div>
+       </div>
+
+       <form action="" class="expenses-form" id="expenseForm">
+           <div class="expenseFeedback"></div>
+           <label for="expensesInput">Please Enter Your Budget</label>
+           <input type="text" id="expensesInput" class="expenses-input">
+       
+           <label for="expensesInputAmount">Please Enter Expense Amount</label>
+           <input type="text" id="expensesInputAmount" class="expenses-input-amount">
+           <button class="btn btn-expense" id="btnExpense">Add Expense</button>
+       </form>
+       <div class="all-title" id="expenseList">
+            <table class="table-list" id="tableList">
+                <thead>
+                    <tr>
+                        <th class="th">Expense Title</th>
+                        <th class="th">Expense Value</th>
+                        <th class="th"></th>
+                        <th class="th"></th>
+                    </tr>
+                </thead>
+                <tbody class="list-items" id="listItems"></tbody>
+                   <!--  <tr>
+                        <td>sghdfhsj</td>
+                    </tr> -->
+                
+            </table>
+        <!-- <div class="expense-title" id="expenseTitle"> -->
+            <!-- <h3  class="list-items">Expense Title</h3> -->
+        <!-- </div> -->
+        <!-- <div class="expense-value" id="expenseValue"> -->
+            <!-- <h3 class="list-items">Expense Value</h3> -->
+        <!-- </div>  -->
+            <!-- <h3 class="list-items"></h3> -->
+        </div>
+
+       <!--  <ul class="title-list" id="expenseList">
+            <li class="expense-title" id="expenseTitle">
+                <h3>Expense Title</h3>
+            </li>
+            <li class="expense-value" id="expenseValue">
+                <h3>Expense Value</h3>
+            </li>
+            <li class="expense-card" id="expenseCard">
+                <h3></h3>
+            </li>
+        </ul> -->
+        <!-- <div class="expense">
+            <div class="expense-item">
+                <h6 class="card-title">title</h6>
+                <h5 class="amount-expense">amount</h5>
+                <div class="expense-icon-items">
+                    <a href="#" class= "edit-icon" data-id="${expense.id}">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="#" class= "delete-icon" data-id="${expense.id}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div> -->
+        
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
